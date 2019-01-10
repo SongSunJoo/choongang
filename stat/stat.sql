@@ -11,8 +11,8 @@ create table statUser (
 	transDB_id number(10) references transferDB(transDB_id),
 	digitalDB_id number(10) references digitalDB(digitalDB_id),
 	happyDB_id	number(10) references happyDB(happyDB_id),
-	tourDB_id1	varchar2(100) references tour1DB(tourDB_id1),
-	tourDB_id2	varchar2(100) references tour2DB(tourDB_id2),
+	tourDB_id1	varchar2(100),
+	tourDB_id2	varchar2(100),
 	oldDB_id	number(10) references oldDB(oldDB_id),
 	mobileDB_id	number(10) references mobileDB(mobileDB_id),
 	user_nick	varchar2(100)
@@ -70,7 +70,7 @@ create table oldDB (
 	oldDB_value	varchar2(100) not null
 );
 
-모바일 컨텐츠 DB
+소셜네트워크 컨텐츠 DB
 create table mobileDB (
 	mobileDB_id	number(10) primary key not null,
 	mobileDB_value	varchar2(100) not null
