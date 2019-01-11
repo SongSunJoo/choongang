@@ -17,6 +17,8 @@ create table statUser (
 	mobileDB_id	number(10) references mobileDB(mobileDB_id),
 	user_nick	varchar2(100)
 );
+alter table statUser modify (user_id number(30));
+select * from statUser;
 
 나이DB
 create table ageDB (
