@@ -34,6 +34,8 @@ public class StatUserContoller {
 		
 		model.addAttribute("result", result);
 		
+		System.out.println("spring push test...");
+		
 		return "survey/survey1R_life";
 	}
 }
