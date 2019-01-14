@@ -15,5 +15,11 @@
 			location.href = "survey1_main.do";
 		</script>
 	</c:if>
+	<c:if test="${result <= 0 }">
+		<script type="text/javascript">
+			alert("입력 실패");
+			location.href = "survey1_main.do";
+		</script>
+	</c:if>
 </body>
 </html>

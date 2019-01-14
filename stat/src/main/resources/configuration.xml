@@ -2,11 +2,11 @@
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 	<typeAliases>
-		<!-- <typeAlias alias="statUser" type="com.ch.stat.model.StatUser" /> -->
+		<typeAlias alias="statUser" type="com.ch.stat.model.StatUser" />
 		
 	</typeAliases>
 	<mappers>
-		<!-- <mapper resource="statUser.xml" /> -->
+		<mapper resource="statUser.xml" />
 		
 	</mappers>
 </configuration>

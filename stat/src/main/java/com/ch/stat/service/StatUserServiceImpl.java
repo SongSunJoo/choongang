@@ -14,7 +14,7 @@ public class StatUserServiceImpl implements StatUserService{
 
 	@Override
 	public int insert(StatUser su) {
-		
+		System.out.println("spring test...");
 		return sud.insert(su);
 	}
 }

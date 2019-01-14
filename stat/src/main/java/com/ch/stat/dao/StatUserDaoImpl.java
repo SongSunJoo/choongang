@@ -14,7 +14,7 @@ public class StatUserDaoImpl implements StatUserDao {
 
 	@Override
 	public int insert(StatUser su) {
-		
+		System.out.println("Spring test...");
 		return sst.insert("statUserns.insert", su);
 	}
 }

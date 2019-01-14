@@ -8,6 +8,7 @@
 </head>
 <body>
 	<script type="text/javascript">
+		/* location.href = "main.do"; */
 		location.href = "survey1_main.do";
 	</script>
 </body>
