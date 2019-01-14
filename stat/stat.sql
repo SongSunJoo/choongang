@@ -1,6 +1,6 @@
 유저
 create table statUser (
-	user_id varchar2(100) primary key not null,
+	user_id number(30) primary key not null,
 	user_place varchar2(100) not null,
 	user_gender varchar2(100) not null,
 	user_age number(10) not null,
@@ -17,13 +17,12 @@ create table statUser (
 	mobileDB_id	number(10) references mobileDB(mobileDB_id),
 	user_nick	varchar2(100)
 );
-alter table statUser modify (user_id number(30));
 select * from statUser;
 
 나이DB
 create table ageDB (
-	ageDB_id	number(10)	primary key not null,
-	ageDB_value	varchar2(100) not null
+	ageDB_id	varchar2(30)	primary key not null,
+	ageDB_value	number(10) not null
 );
 
 반려동물DB
@@ -56,14 +55,10 @@ create table happyDB (
 	happyDB_value	varchar2(100) not null
 );
 
-여행지1DB (대륙)
+여행지DB
 create table tour1DB (
-	tourDB_id1	varchar2(100) primary key not null
-);
-
-여행지2DB (나라)
-create table tour2DB (
-	tourDB_id2	varchar2(100) primary key not null
+	tourDB_id1	varchar2(100),
+	tourDB_id2	varchar2(100)
 );
 
 나이 들었을 때 DB
