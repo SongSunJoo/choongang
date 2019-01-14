@@ -1,11 +1,11 @@
 package com.ch.stat.model;
 
 public class StatUser {
-	private String user_id;
+	private int    user_id;
 	private String user_place;
 	private String user_gender;
-	private int    age;
-	private String group;
+	private int    user_age;
+	private String user_group;
 	private String pet_value;
 	private int    height_value;
 	private String ln_value;
@@ -18,10 +18,10 @@ public class StatUser {
 	private int    mobileDB_id;
 	private String user_nick;
 	
-	public String getUser_id() {
+	public int getUser_id() {
 		return user_id;
 	}
-	public void setUser_id(String user_id) {
+	public void setUser_id(int user_id) {
 		this.user_id = user_id;
 	}
 	public String getUser_place() {
@@ -36,17 +36,17 @@ public class StatUser {
 	public void setUser_gender(String user_gender) {
 		this.user_gender = user_gender;
 	}
-	public int getAge() {
-		return age;
+	public int getUser_Age() {
+		return user_age;
 	}
-	public void setAge(int age) {
-		this.age = age;
+	public void setUser_Age(int user_age) {
+		this.user_age = user_age;
 	}
-	public String getGroup() {
-		return group;
+	public String getUser_Group() {
+		return user_group;
 	}
-	public void setGroup(String group) {
-		this.group = group;
+	public void setUser_Group(String user_group) {
+		this.user_group = user_group;
 	}
 	public String getPet_value() {
 		return pet_value;

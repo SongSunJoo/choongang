@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="statUserns">
+	<!-- Use type aliases to avoid typing the full classname every time. -->
+	<resultMap id="statUserResult" type="statUser">
+		<result property="user_id" 		column="user_id" />
+		<result property="user_place" 	column="user_place" />
+		<result property="user_gender"  column="user_gender" />
+		<result property="user_age"   	column="user_age" />
+		<result property="user_group"   column="user_group" />
+		<result property="pet_value" 	column="pet_value" />
+		<result property="height_value" column="height_value" />
+		<result property="ln_value"    	column="ln_value" />
+		<result property="transDB_id"   column="transDB_id" />
+		<result property="digitalDB_id" column="digitalDB_id" />
+		<result property="happyDB_id"   column="happyDB_id" />
+		<result property="tourDB_id1"  	column="tourDB_id1" />
+		<result property="tourDB_id2"  	column="tourDB_id2" />
+		<result property="oldDB_id"     column="oldDB_id" />
+		<result property="mobileDB_id"  column="mobileDB_id" />
+		<result property="user_nick" 	column="user_nick" />
+	</resultMap>
+	
+	<insert id="insert" parameterType="statUser">
+		<selectKey keyProperty="user_id" order="BEFORE" resultType="int">
+			select nvl(max(user_id),0)+1 from statUser
+		</selectKey>
+		insert into statUser (user_id, user_place, user_gender, user_age, user_group) 
+					values   (#{user_id}, #{user_place}, #{user_gender}, #{user_age}, #{user_group})
+	</insert>
+	
+	
+</mapper>
