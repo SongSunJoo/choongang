@@ -13,7 +13,7 @@ create table statUser (
 	transDB_id number(10) references transferDB(transDB_id),
 	digitalDB_id number(10) references digitalDB(digitalDB_id),
 	happyDB_id	number(10) references happyDB(happyDB_id),
-	tourDB_id1	varchar2(100) references tourDB(tourDB_id1),
+	tourDB_id1	number(10) references tourDB(tourDB_id1),
 	oldDB_id	number(10) references oldDB(oldDB_id),
 	mobileDB_id	number(10) references mobileDB(mobileDB_id),
 	user_nick	varchar2(100)
