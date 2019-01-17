@@ -38,10 +38,12 @@ drop table petDB;
 create table lastNameDB (
 	lnDB_id	number(10) primary key not null,
 	lnDB_value	varchar2(100) not null,
-	lnDB_person number(38) not null,
+	lnDB_people number(38) not null,
 	lnDB_percent number(10) not null
 );
 drop table lastNameDB;
+select * from lastNameDB;
+alter table lastNameDB rename column lnDB_person to lnDB_people;
 
 계층이동DB - 퍼센트 추가
 create table transferDB (
@@ -103,4 +105,6 @@ create table mobileDB (
 	mobileDB_person number(38) not null,
 	mobileDB_percent number(10) not null
 );
+alter table mobileDB rename column mobileDB_person to mobileDB_people;
+select * from mobileDB;
 drop table mobileDB;
