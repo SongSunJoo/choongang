@@ -7,6 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-hi 안녕
+<script type="text/javascript">
+	location.href = "survey1_test_main.do";
+</script>
 </body>
 </html>
