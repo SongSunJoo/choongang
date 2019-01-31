@@ -1,6 +1,8 @@
+drop table statUser;
+
 select * from ageDB;
-insert into ageDB values('남', 79.7);
-insert into ageDB values('여', 85.7);
+insert into ageDB values('man', 79.7);
+insert into ageDB values('woman', 85.7);
 
 commit;
 

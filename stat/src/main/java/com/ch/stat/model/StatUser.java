@@ -12,8 +12,7 @@ public class StatUser {
 	private int    transDB_id;
 	private int    digitalDB_id;
 	private int    happyDB_id;
-	private String tourDB_id1;
-	private String tourDB_id2;
+	private int    tourDB_id1;
 	private int    oldDB_id;
 	private int    mobileDB_id;
 	private String user_nick;
@@ -85,18 +84,13 @@ public class StatUser {
 	public void setHappyDB_id(int happyDB_id) {
 		this.happyDB_id = happyDB_id;
 	}
-	public String getTourDB_id1() {
+	public int getTourDB_id1() {
 		return tourDB_id1;
 	}
-	public void setTourDB_id1(String tourDB_id1) {
+	public void setTourDB_id1(int tourDB_id1) {
 		this.tourDB_id1 = tourDB_id1;
 	}
-	public String getTourDB_id2() {
-		return tourDB_id2;
-	}
-	public void setTourDB_id2(String tourDB_id2) {
-		this.tourDB_id2 = tourDB_id2;
-	}
+	
 	public int getOldDB_id() {
 		return oldDB_id;
 	}
