@@ -77,4 +77,14 @@ public class StatUserServiceImpl implements StatUserService{
 	public StatUser selectAll(int user_id) {
 		return sud.selectAll(user_id);
 	}
+
+	@Override
+	public int selectCount() {
+		return sud.selectCount();
+	}
+
+	@Override
+	public int selectStatCount() {
+		return sud.selectStatCount();
+	}
 }

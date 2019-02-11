@@ -76,4 +76,12 @@
 	<select id="selectAll" parameterType="int" resultType="statUser">
 	    select * from statUser where user_id = #{user_id}
 	</select>
+	
+	<select id="selectCount" resultType="int">
+		select count(height_value) from statUser
+	</select>
+	
+	<select id="selectStatCount" resultType="int">
+		select count(*) from statUser
+	</select>
 </mapper>

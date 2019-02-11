@@ -30,4 +30,8 @@ public interface StatUserDao {
 
 	StatUser selectAll(int user_id);
 
+	int selectCount();
+
+	int selectStatCount();
+
 }

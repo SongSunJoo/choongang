@@ -29,4 +29,8 @@ public interface StatUserService {
 	int updateNick(int user_id, String user_nick);
 
 	StatUser selectAll(int user_id);
+
+	int selectCount();
+
+	int selectStatCount();
 }

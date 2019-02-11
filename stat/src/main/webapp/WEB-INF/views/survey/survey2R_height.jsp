@@ -48,7 +48,9 @@
 						<hr>
 						<h4>설문조사 응답자들의 키의 분포는 다음과 같습니다 </h4><br>
 						<div class="row">
-							<div class="col-md-7"></div>
+							<div class="col-md-7">
+							전체 응답자 : ${total }<br>
+							</div>
 							<div class="col-md-5">
 							(단위 : cm)
 							</div>

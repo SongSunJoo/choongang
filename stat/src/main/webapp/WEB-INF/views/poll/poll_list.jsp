@@ -34,7 +34,7 @@
 						<!-- list와 total(전체 갯수) 불러옴 -->
 						<c:forEach var="poll" items="${list}">
 							<tr><td>${poll.poll_id}</td>
-								<td><a href="poll_result.do?poll_id=${poll.poll_id}&pageNum=${pb.currentPage}">
+								<td><a href="poll_result.do?poll_id=${poll.poll_id}&pageNum=${pb.currentPage}&poll_cont1_cnt=${poll.poll_cont1_cnt}&poll_cont2_cnt=${poll.poll_cont2_cnt}">
 										${poll.poll_title}</a></td>
 								<td>${poll.poll_cont1}</td>
 								<td>${poll.poll_cont2}</td>

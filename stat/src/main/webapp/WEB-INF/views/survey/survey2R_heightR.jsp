@@ -11,7 +11,7 @@
 <input type="hidden" name="height_value" value="${height_value }"> --%>
 <script type="text/javascript">
 	/* alert("before R controller..."); */
-	location.href = "survey2R_heightR.do?user_id=${user_id }&height_value=${height_value }";
+	location.href = "survey2R_heightR.do?user_id=${user_id }&height_value=${height_value }&total=${total}";
 </script>
 
 </body>

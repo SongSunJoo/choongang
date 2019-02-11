@@ -120,4 +120,14 @@ public class StatUserDaoImpl implements StatUserDao {
 	public StatUser selectAll(int user_id) {
 		return sst.selectOne("statUserns.selectAll", user_id);
 	}
+
+	@Override
+	public int selectCount() {
+		return sst.selectOne("statUserns.selectCount");
+	}
+
+	@Override
+	public int selectStatCount() {
+		return sst.selectOne("statUserns.selectStatCount");
+	}
 }

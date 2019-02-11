@@ -19,7 +19,7 @@
 	<div class="uppermain" align="center">
 		<br>
 		<div>
-			<h3 style="color: navy; font-weight: bold;">행복지수 분석결과</h3>
+			<h3 style="color: navy; font-weight: bold;">전체 응답자(${statTotal }명) 대상, 각 요소별 행복지수 분석결과</h3>
 			<!-- <section class="box1 pull-center" style="font-size:22px; font-family: serif; font-weight: bold; color: white;">
 						행복지수 분석결과</section> -->
 			<hr><br>

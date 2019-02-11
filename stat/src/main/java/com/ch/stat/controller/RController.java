@@ -13,7 +13,7 @@ import com.github.rcaller.rStuff.RCode;
 @Controller
 public class RController {
 	@RequestMapping("survey2R_heightR")
-	public String survey2R_heightR(int user_id, int height_value, Model model) {
+	public String survey2R_heightR(int user_id, int height_value, int total, Model model) {
 		System.out.println("R Controller Start");
 
 		RCaller caller = new RCaller();
@@ -65,7 +65,7 @@ public class RController {
 			code.addRCode("i<-dbGetQuery(conn, mysql9)");
 			code.addRCode("m <- matrix(c(a,b,c,d,e,f,g,h,i))");
 			code.addRCode(
-					"plot(m, type = 'h', axes = FALSE, ann = FALSE, ylab = \" \", xlab = \" \", ylim = c(0, 20))");
+					"plot(m, type = 'h', axes = FALSE, ann = FALSE, ylab = \" \", xlab = \" \")");
 			code.addRCode(
 					"axis(1, at = 1:9, lab = c(\'150\', \'150~155\', \'155~160\', \'160~165\', \'165~170\', \'170~175\', \'175~180\', \'180~185\', \'185\'), las = 2)");
 			code.addRCode("axis(2, ylim = c(0, 20))");
@@ -105,6 +105,7 @@ public class RController {
 				}
 				model.addAttribute("user_id", user_id);
 				model.addAttribute("height_value", height_value);
+				model.addAttribute("total", total);
 //				model.addAttribute("destinationPath", destinationPath);
 //				model.addAttribute("fileName", fileName);
 //				model.addAttribute("sourceFilePath", sourceFilePath);
@@ -696,8 +697,8 @@ public class RController {
 		return "survey/survey10R_happy";
 	}
 
-	@RequestMapping("survey12_happyRel")
-	public String survey12_happyRel() {
+	@RequestMapping("survey12R_happyRel")
+	public String survey12R_happyRel(int statTotal, Model model) {
 		System.out.println("R Controller Start survey12R");
 
 		RCaller caller = new RCaller();
@@ -1297,6 +1298,7 @@ public class RController {
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
+		model.addAttribute("statTotal", statTotal);
 		return "survey/survey12_happyRel";
 	}
 }

@@ -114,7 +114,8 @@
 					</td>
 					<td colspan="2" align="center">
 						<br>
-						그렇다면 행복의 조건은 무엇일까요?<br><br>
+						<b>그렇다면 행복의 조건은 무엇일까요?</b><br><br>
+						<font size="2">※ 전체 수집된 데이터를 바탕으로 각 요소별 행복지수를 보여드립니다.</font><br><br><br>
 						<img alt="" src="${path }/images/happy2.png" width="100px">
 						<br><br><br><br>
 						<input type="submit" class="btn btn-danger" value="　  　다  음　▶　  " style="font-size: 16; font-color: #000000; font-weight: bold;"/>

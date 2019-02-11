@@ -104,9 +104,12 @@ public class StatUserContoller {
 		System.out.println("height_value= " + height_value);
 		
 		int result = sus.updateHeight(user_id, height_value);
+		int total = sus.selectCount();
+		System.out.println("total = " + total);
 		
 		model.addAttribute("user_id", user_id);
 		model.addAttribute("height_value", height_value);
+		model.addAttribute("total", total);
 		//model.addAttribute("result", result);
 		
 		//return "survey/survey2R_height";
@@ -311,6 +314,14 @@ public class StatUserContoller {
 		model.addAttribute("result", result);
 		
 		return "survey/survey11R_allYou";
+	}
+	
+	@RequestMapping("survey12_happyRel")
+	public String survey12_happyRel(Model model) {
+		int statTotal = sus.selectStatCount();
+		model.addAttribute("statTotal", statTotal);
+		System.out.println("statTotal : " + statTotal);
+		return "survey/survey12R_happyRel";
 	}
 	
 }
